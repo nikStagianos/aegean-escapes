@@ -14,9 +14,3 @@ A static responsive landing page built with pure HTML and CSS, showcasing travel
 - Destination cards with images and descriptions
 - Gradient wave divider and elegant layout
 - Built using Tailwind CSS CDN (no build tools)
-
-- To deploy your own version:
-
-1. Fork or clone the repository
-2. Push your changes to the `main` branch
-3. Enable GitHub Pages from the repository settings → Pages → Source: `main` branch, folder `/root`
