@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegean Escapes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-gray-100 shadow-md ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white-400">
+            <div class="flex justify-between items-center h-16">
+            
+                <!-- Logo -->
+                <div class="flex-shrink-0 quintessential-regular">
+                    <a href="#" class="text-2xl font-bold text-blue-900">Aegean Escapes</a>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-6 text-2xl quintessential-regular">
+                    <a href="#home" class="text-blue-900 hover:text-blue-700">Home</a>
+                    <a href="#destinations" class="text-blue-900 hover:text-blue-700">Destinations</a>
+                    <a href="#experiences" class="text-blue-900 hover:text-blue-700">Experiences</a>
+                    <a href="#about" class="text-blue-900 hover:text-blue-700">About</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#destinations" class="block py-2 text-gray-700 hover:text-blue-600">Destinations</a>
+            <a href="#experiences" class="block py-2 text-gray-700 hover:text-blue-600">Experiences</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+        </div>
+    </header>
+
+     <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center py-32 text-white min-h-screen" style="background-image: url('../assets/image7.jpg');">
+        <div class="text-center px-6">
+            <h1 class="text-5xl font-bold roboto-condensed-font">Explore the Aegean</h1>
+            <p class="mt-4 text-xl roboto-condensed-font">Sail into serenity, island by island.</p>
+            <a href="#destinations" class="mt-6 inline-block bg-transparent border border-white text-white px-6 py-3 rounded-lg hover:text-blue-300 transition">Start your journey</a>
+        </div>
+    </section>
+
+    <!-- Wave Divider with Left-to-Right Gradient -->
+    <div class="relative -mt-1">
+      <svg class="w-full h-12" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ffffff" />
+            <stop offset="35%" stop-color="#fcfefe" />
+            <stop offset="40%" stop-color="#e0eff4" />
+            <stop offset="58%" stop-color="#5eb2cb" />
+            <stop offset="78%" stop-color="#1b8db5" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#waveGradient)" d="M0,64L48,69.3C96,75,192,85,288,101.3C384,117,480,139,576,160C672,181,768,203,864,208C960,213,1056,192,1152,176C1248,160,1344,149,1392,144L1440,139L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+
+    <!-- Destination Section -->
+    <section id="destinations" class="py-20 bg-white relative">
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 z-0">
+        <div class="w-full h-full bg-gradient-to-r from-white via-white to-transparent absolute" style="width: 70%;"></div>
+        <img src="../assets/image5.jpg" alt="Aegean Background" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Destinations Header -->
+      <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-blue-900 roboto-condensed-business mb-10">Top Aegean Destinations</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Santorini -->
+          <div class="bg-blue-50 rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/santorini.jpg" alt="Santorini" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-blue-800 roboto-condensed">Santorini</h3>
+              <p class="mt-2 text-gray-700">Famous for its sunsets, white-washed houses, and volcanic beaches.</p>
+            </div>
+          </div>
+
+          <!-- Mykonos -->
+          <div class="bg-blue-50 rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/mykonos.jpg" alt="Mykonos" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-blue-800 roboto-condensed">Mykonos</h3>
+              <p class="mt-2 text-gray-700">Vibrant nightlife, iconic windmills, and crystal-clear waters.</p>
+            </div>
+          </div>
+
+          <!-- Naxos -->
+          <div class="bg-blue-50 rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/naxos.jpg" alt="Naxos" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-blue-800 roboto-condensed">Naxos</h3>
+              <p class="mt-2 text-gray-700">Lush landscapes, ancient ruins, and authentic island charm.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="py-20 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-6 space-y-16">
+
+            <!-- Sailing: Left -->
+            <div class="flex flex-col md:flex-row items-center">
+            <img src="../assets/sailing.jpg" alt="Sailing" class="w-full md:w-1/2 rounded-lg shadow-md">
+            <div class="md:ml-10 mt-6 md:mt-0 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-blue-900 roboto-condensed">Sailing</h3>
+                <p class="mt-4 text-gray-700 text-lg roboto-condensed">
+                Cruise the Aegean on traditional boats and luxury yachts. Discover hidden coves and island gems.
+                </p>
+            </div>
+            </div>
+
+            <!-- Separator -->
+            <div class="my-10 border-t border-blue-200"></div>
+
+            <!-- Cooking: Right -->
+            <div class="flex flex-col md:flex-row-reverse items-center">
+            <img src="../assets/cooking.jpg" alt="Cooking" class="w-full md:w-1/2 rounded-lg shadow-md">
+            <div class="md:mr-10 mt-6 md:mt-0 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-blue-900 roboto-condensed">Cooking</h3>
+                <p class="mt-4 text-gray-700 text-lg roboto-condensed">
+                Learn to prepare authentic Greek dishes with local chefs using fresh island ingredients.
+                </p>
+            </div>
+            </div>
+
+            <!-- Separator -->
+            <div class="my-10 border-t border-blue-200"></div>
+
+            <!-- Hiking: Left -->
+            <div class="flex flex-col md:flex-row items-center">
+            <img src="../assets/hiking.jpg" alt="Hiking" class="w-full md:w-1/2 rounded-lg shadow-md">
+            <div class="md:ml-10 mt-6 md:mt-0 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-blue-900 roboto-condensed">Hiking</h3>
+                <p class="mt-4 text-gray-700 text-lg roboto-condensed">
+                Explore scenic trails through mountains, olive groves, and coastal paths with breathtaking views.
+                </p>
+            </div>
+            </div>
+
+            <!-- Separator -->
+            <div class="my-10 border-t border-blue-200"></div>
+
+            <!-- Culture: Right -->
+            <div class="flex flex-col md:flex-row-reverse items-center">
+            <img src="../assets/culture.jpg" alt="Culture" class="w-full md:w-1/2 rounded-lg shadow-md">
+            <div class="md:mr-10 mt-6 md:mt-0 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-blue-900 roboto-condensed">Culture</h3>
+                <p class="mt-4 text-gray-700 text-lg roboto-condensed">
+                Discover ancient ruins, local festivals, and timeless island traditions that bring history to life.
+                </p>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="relative rounded-lg shadow-md overflow-hidden">
+          <!-- Εικόνα ως φόντο -->
+          <div class="bg-cover bg-center bg-no-repeat h-auto md:h-[700px] flex flex-col justify-center items-center text-center px-4 py-16" style="background-image: url('../assets/image3.jpg');">
+            
+            <!-- Overlay -->
+            <div class="bg-black bg-opacity-50 w-full h-full absolute inset-0 z-0"></div>
+
+            <!-- Κείμενο -->
+            <div class="relative z-10 max-w-3xl">
+              <h2 class="text-4xl md:text-5xl font-bold text-white roboto-condensed-font mb-4 drop-shadow-lg">About Us</h2>
+              <p class="text-xl md:text-3xl text-white roboto-condensed-business mb-2 drop-shadow-md">
+                At Aegean Escapes, we craft unforgettable experiences across the Greek islands.
+              </p>
+              <p class="text-sm md:text-lg text-white roboto-condensed-business drop-shadow-md mt-6">
+                Founded by locals with a passion for authentic travel, we celebrate the beauty of Greece—one moment at a time.
+                Our team is dedicated to curating immersive journeys that honor tradition, embrace nature, and foster genuine human connection.
+                Whether you're sailing into sunset or savoring island flavors, every experience is designed to leave a lasting impression.
+              </p>
+              <a href="#more" class="mt-6 inline-block bg-white text-blue-900 font-semibold py-3 px-6 rounded-full shadow hover:bg-blue-100 transition duration-300">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer class="bg-blue-900 text-white py-2 border-t border-blue-700">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        
+        <!-- Logo & Description -->
+      <div class="text-center md:text-left">
+        <img src="../assets/logo2.png" alt="Logo" class="h-48 w-auto mx-auto md:mx-0">
+      </div>
+
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-3 roboto-condensed">Explore</h4>
+          <ul class="space-y-2 text-sm text-blue-200">
+            <li><a href="#home" class="hover:text-white transition">Home</a></li>
+            <li><a href="#destinations" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="#experiences" class="hover:text-white transition">Experiences</a></li>
+            <li><a href="#about" class="hover:text-white transition">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Contact -->
+        <div>
+          <h4 class="text-lg font-semibold mb-3 roboto-condensed">Connect</h4>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a href="#" class="bg-blue-700 hover:bg-blue-600 p-2 rounded-full transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="bg-blue-700 hover:bg-blue-600 p-2 rounded-full transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="mailto:info@aegeanescapes.com" class="bg-blue-700 hover:bg-blue-600 p-2 rounded-full transition">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <p class="mt-4 text-sm text-blue-200">info@aegeanescapes.com</p>
+        </div>
+      </div>
+
+      <div class=" text-center text-xs text-blue-300 roboto-condensed">
+        &copy; 2025 Aegean Escapes. All rights reserved.
+      </div>
+    </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    // Toggle menu on button click
+    menuBtn.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Close menu when clicking on a link inside it
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      const isClickInside = menuBtn.contains(event.target) || mobileMenu.contains(event.target);
+      if (!isClickInside) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
